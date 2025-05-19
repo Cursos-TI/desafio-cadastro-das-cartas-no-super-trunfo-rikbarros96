@@ -20,3 +20,67 @@ int main() {
 
     return 0;
 }
+
+#include <stdio.h>
+
+// iniciando a estrutura das carta
+typedef struct cidade {
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos; 
+} cidade; 
+
+
+int main() {
+    //entrada de duas cartas Cidade1, Cidade2;
+
+    //dados carta1
+
+    cidade carta1, carta2;
+
+    printf("cadastro da carta A01:\n") ;
+    printf("populacao:") ;
+    scanf("%d",&carta1.populacao) ;
+    printf("area: ") ;
+    scanf("%f", &carta1.area) ;
+    printf("PIB: ") ;
+    scanf("%f", &carta1.pib) ;
+    printf("pontos turisticos: ") ;
+    scanf("%d", &carta1.pontos_turisticos) ;
+
+    // dados da carta2
+    printf("\ncadastro da carta B02:\n") ;
+    printf("populacao") ;
+    scanf("%d", &carta2.populacao) ;
+    printf("area: ");
+    scanf("%f", &carta2.area) ;
+    printf("PIB: ") ;
+    scanf("%f", &carta2.pib) ;
+    printf("pontos turisticos") ;
+    scanf("%d", &carta2.pontos_turisticos);
+
+    //dados cadastrados
+    printf("\ndados cadastrados:\n") ;
+
+//dados carta 1
+    printf("n\carta A01:\n") ;
+    printf("populacao: %d\n", carta1.populacao) ;
+    printf("area: %.2f\n", carta1.area) ;
+    printf("PIB: %.2f\n", carta1.pib) ;
+    printf("pontos turisticos: %d\n", carta1.pontos_turisticos) ;
+
+
+//dados carta 1
+    printf("n\carta B02:\n") ;
+    printf("populacao: %d\n", carta2.populacao) ;
+    printf("area: %.2f\n", carta2.area) ;
+    printf("PIB: %.2f\n", carta2.pib) ;
+    printf("pontos turisticos: %d\n", carta2.pontos_turisticos) ;
+
+    return 0;
+
+
+   
+
+}
